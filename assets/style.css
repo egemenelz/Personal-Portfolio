@@ -104,13 +104,19 @@ header nav ul li a {
 
 /* SKILS STARTS HERE */
 .skills{
-    display: flex;
-    align-items: center;
-    margin: 60px 20px;
-    padding: 40px 0;
+    width: 50%;
+    margin: 100px auto;
 }
+
+.skill-row{
+    text-align: left;
+    line-height: 2;
+    margin: 100px auto;
+}
+
 .skills h2{
     font-size: 40px;
+    text-align: center;
 }
 .skills h3{
     font-size: 20px;
@@ -118,21 +124,65 @@ header nav ul li a {
 .skills h2, h3{
     font-family: 'Montserrat', sans-serif;
     color: #001E6C;
-    text-align: center;
+    /* text-align: center; */
+}
+
+.image{
+    position: relative;
+}
+
+.image_img{
+    display: block;
+    /* width: 100%; */
+}
+
+.image_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%;
+    height: 100%; */
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image_overlay:hover {
+    opacity: 1;
+}
+
+.image_title img{
+    width: 1px;
+}
+
+.first-skill-img{
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.second-skill-img{
+    width: 25%;
+    float: right;
+    margin-left: 30px;
 }
 
 /* SKILSS ENDS HERE */
 
 /* PROJECTS STARTS HERE */
 .projects{
-    /* width: 100%;
-    height: 200px; */
-    
-        display: flex;
-        margin: 100px 0;
-        flex-direction: column;
-       
-        align-items: center;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .projects h2{
@@ -142,72 +192,63 @@ header nav ul li a {
 }
 
 .project-one img{
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    position: relative;
+}
+
+.project-two,
+.project-three,
+.project-four{
+    padding-top: 40px;
 }
 
 
 
 /* PROJECTS ENDS HERE */
 
+/* Get To Touch Starts Here */
 
-/* FOOTER STARTS HERE */
-.footer{
-    background-color: #56BBF1;
-    display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.contact-me{
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
 }
 
-footer > *{
-    flex: 1;
-  margin: 15px;
+.contact-me img{
+    float: left;
+    margin-right: 30px;
+    width: 150px;
+}
+
+.contact-me a{
+    float: right;
+}
+/* Get To Touch Ends Here */
+
+
+/* FOOTER STARTS HERE */
+
+.footer{
+    display: flex;
+    justify-content: space-around;
 }
 
 .footer img{
-    width: 30px;
+    width: 25px;
 }
 
-.contact-form input,
-.contact-form textarea {
-  border: 1px solid var(--secondary-color);
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: var(--secondary-color);
-  width: 100%;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  border-radius: 10px;
-  background-color: rgba(255,255,255, 0.75);
-}
-.contact-form input:focus,
-.contact-form textarea:focus{
-  background-color: rgba(255,255,255, 1);
-  outline: none;
-}
-.contact-form button {
-  width: 100%;
-  border: none;
-  background: yellow;
-  color: #024e76;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 16px;
-  border-radius: 10px;
-}
-.contact-form button:hover {
-  color: var(--primary-color);
-  background: var(--tertiary-color);
+.contact-me a, .footer a{
+    text-decoration: none;
+    color :#001E6C
 }
 
-footer div{
-    width: 460px;
-    margin: 0 auto;
-    /* text-align: center; */
-    color: white;
+.contact-me a:visited, .footer a:visited{
+    color :#001E6C
 }
-
-
 
 

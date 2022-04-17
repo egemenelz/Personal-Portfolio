@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/style.css">
-    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,11 +17,11 @@
 <body>
     <!-- Hero Section of DOM -->
     <div class="top-container">
-        <img class="top-cloud" src="/assets/images/cloud.png" alt="cloud-img">
+        <img class="top-cloud" src="./assets/images/cloud.png" alt="cloud-img">
         <h1>I'm Egemen.</h1>
         <h2>a <span class="pro">pro</span>grammer.</h2>
-        <img class="bottom-cloud" src="/assets/images/cloud.png" alt="cloud-img">
-        <img src="/assets/images/mountain.png" alt="mountain-img">
+        <img class="bottom-cloud" src="./assets/images/cloud.png" alt="cloud-img">
+        <img src="./assets/images/mountain.png" alt="mountain-img">
     </div>
 
     <!-- Navigation Bar -->
@@ -44,11 +44,12 @@
         </nav>
     </header>
 
-    <article id ="about-me" class="about-me">
-        <img src="/assets/images/person.png" alt="">
+    <article id="about-me" class="about-me">
+        <img src="./assets/images/person.png" alt="">
         <h2>Hi.</h2>
         <p>
-            I'm a web designer / developer based in Miami, Florida. I have a passion for web development and love to create
+            I'm a web designer / developer based in Miami, Florida. I have a passion for web development and love to
+            create
             for web and mobile devices.
         </p>
     </article>
@@ -56,22 +57,21 @@
 
     <section id="skills" class="skills">
         <hr>
-        <img src="/assets/images/skills-icon.png" alt="skills-image">
         <h2>My Skills</h2>
         <div class="skill-row">
-            <img src="/assets/images/idea-icon.png" alt="idea-image">
+            <img class="first-skill-img" src="./assets/images/idea-icon.png" alt="idea-image">
             <h3>Lorem & Ipsum</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quia sunt fugiat doloribus suscipit
                 possimus voluptatibus corporis illum atque minima ex cupiditate fuga enim, nesciunt assumenda
                 beatae! Vero, reiciendis delectus.</p>
         </div>
         <div class="skill-row">
+            <img class="second-skill-img" src="./assets/images/idea-icon.png" alt="idea-image">
             <h3>Lorem Ipsum Dolor</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi magni eum necessitatibus corrupti,
                 doloribus aperiam labore nemo libero non officia earum temporibus molestias ad autem, quam id
                 voluptatem dolores esse?
             </p>
-            <img src="/assets/images/idea-icon.png" alt="idea-image">
         </div>
         <hr>
     </section>
@@ -79,60 +79,58 @@
     <section id="projects" class="projects">
         <h2>Projects</h2>
         <div class="project-one">
-            <img src="/assets/images/project.png" alt="project-image">
+            <div class="image">
+                <img src="./assets/images/Project-1.png" alt="project-image">
+                <div class="image_overlay">
+                    <div class="image_title">
+                        <p class="image_description">
+                            RUN BUDDY APP
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
         </div>
         <div class="project-two">
-            <img src="/assets/images/project.png" alt="project-image">
+            <img src="./assets/images/project.png" alt="project-image">
         </div>
         <div class="project-three">
-            <img src="/assets/images/project.png" alt="project-image">
+            <img src="./assets/images/project.png" alt="project-image">
         </div>
         <div class="project-four">
-            <img src="/assets/images/project.png" alt="project-image">
+            <img src="./assets/images/project.png" alt="project-image">
         </div>
     </section>
 
-    <div class="contact-me">
-        <img src="/assets/images/contact-icon.png" alt="Contact-Image">
-        <h2>Get To Touch</h2>
-        <h3>Lorem ipsum, dolor sit amet consectetur</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dignissimos, ad velit ea quibusdam
-            molestiae eligendi optio nemo odit atque ipsum accusamus, laboriosam repellat ducimus architecto
-            doloribus animi similique? Error!</p>
-        <a href="mailto:name@email.com" class="btn">CONTACT ME</a>
+    <div id="contact-me" class="contact-me">
+        <img src="./assets/images/contact-icon.png" alt="Contact-Image">
+        <div class="contact-info">
+            <h2>Get To Touch</h2>
+            <h3>Lorem ipsum, dolor sit amet consectetur</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dignissimos, ad velit ea quibusdam
+                molestiae eligendi optio nemo odit atque ipsum accusamus, laboriosam repellat ducimus architecto
+                doloribus animi similique? Error!</p>
+            <a href="mailto:name@email.com" class="btn">CONTACT ME</a>
+        </div>
+    </div>
 
-        <div class="contact-form">
-            <h3>Contact Us</h3>
-            <form>
-                <label for="contact-name">Your Name</label>
-                <input type="text" placeholder="Your Name" id="contact-name" />
 
-                <label for="contact-message">Message</label>
-                <textarea id="contact-message" placeholder="Message"></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
+    <footer class="footer">
+        <div class="linkedIn">
+            <img src="./assets/images/linkedin.png" alt="linkedIn-image">
+            <a href="https://www.linkedin.com" class="footer-link">LinkedIn</a>
         </div>
 
-    <footer id="contact-me" class="footer">
-            <div class="linkedIn">
-                <img src="/assets/images/linkedin.png" alt="linkedIn-image">
-                <a href="https://www.linkedin.com" class="footer-link">LinkedIn</a>
-            </div>
-    
-            <div class="twitter">
-                <img src="/assets/images/twitter.png" alt="twitter-image">
-                <a href="https://www.twitter.com" class="footer-link">Twitter</a>
-            </div>
-    
-            <div class="appBrewery">
-                <img src="/assets/images/gitHub.png" alt="GitHub-image">
-                <a href="https://github.com" class="footer-link">GitHub</a>
-            </div>
-            <p> &copy;2022 Egemen Eliz</p>
+        <div class="twitter">
+            <img src="./assets/images/twitter.png" alt="twitter-image">
+            <a href="https://www.twitter.com" class="footer-link">Twitter</a>
         </div>
 
-        
+        <div class="appBrewery">
+            <img src="./assets/images/gitHub.png" alt="GitHub-image">
+            <a href="https://github.com" class="footer-link">GitHub</a>
+        </div>
+        <p> &copy;2022 Egemen Eliz</p>
     </footer>
 </body>
 
