@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/images/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,9 +19,9 @@
     <div class="top-container">
         <img class="top-cloud" src="./assets/images/cloud.png" alt="cloud-img">
         <h1>I'm Egemen.</h1>
-        <h2>a <span class="pro">pro</span>grammer.</h2>
+        <h2 class="hero-text">a <span class="pro">pro</span>grammer.</h2>
         <img class="bottom-cloud" src="./assets/images/cloud.png" alt="cloud-img">
-        <img src="./assets/images/mountain.png" alt="mountain-img">
+        <img class="mountain" src="./assets/images/mountain.png" alt="mountain-img">
     </div>
 
     <!-- Navigation Bar -->
@@ -79,17 +79,13 @@
     <section id="projects" class="projects">
         <h2>Projects</h2>
         <div class="project-one">
-            <div class="image">
-                <img src="./assets/images/Project-1.png" alt="project-image">
+            <div class="image-container">
+                <img src="./assets/images/Project-1.png" class="project-one-image" alt="project-image">
                 <div class="image_overlay">
-                    <div class="image_title">
-                        <p class="image_description">
-                            RUN BUDDY APP
-                        </p>
-                    </div>
+                    <div class="image_icon"><a href="https://github.com/egemenelz/RunBuddy" target="blank"><img src="./assets/images/GitHub-Mark-32px.png" alt="GitHub-image"></a></div>
+                    <div class="image_title"><a href="https://egemenelz.github.io/RunBuddy/" target="_blank">RUN BUDDY APP</a></div>
                 </div>
             </div>
-            
         </div>
         <div class="project-two">
             <img src="./assets/images/project.png" alt="project-image">
@@ -118,19 +114,21 @@
     <footer class="footer">
         <div class="linkedIn">
             <img src="./assets/images/linkedin.png" alt="linkedIn-image">
-            <a href="https://www.linkedin.com" class="footer-link">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/egemeneliz/" target="blank" class="footer-link">LinkedIn</a>
         </div>
 
         <div class="twitter">
             <img src="./assets/images/twitter.png" alt="twitter-image">
-            <a href="https://www.twitter.com" class="footer-link">Twitter</a>
+            <a href="https://www.twitter.com" target="blank" class="footer-link">Twitter</a>
         </div>
 
         <div class="appBrewery">
             <img src="./assets/images/gitHub.png" alt="GitHub-image">
-            <a href="https://github.com" class="footer-link">GitHub</a>
+            <a href="https://github.com/egemenelz" target="blank" class="footer-link">GitHub</a>
         </div>
-        <p> &copy;2022 Egemen Eliz</p>
+        <div>
+            <p> &copy;2022 Egemen Eliz</p>
+        </div>
     </footer>
 </body>
 
